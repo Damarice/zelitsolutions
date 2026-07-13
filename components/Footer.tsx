@@ -15,11 +15,11 @@ export default function Footer() {
             <Image
               src="/logo.jpeg"
               alt="Zelitsolutions"
-              width={100}
-              height={100}
+              width={150}
+              height={150}
               priority
               className="rounded mb-4 object-contain"
-              style={{ width: '100%', height: '50px', maxWidth: '100px' }}
+              style={{ width: 'auto', height: '60px' }}
             />
             <p className="text-sm text-gray-600 mb-6 leading-relaxed">
               Your trusted partner for comprehensive IT solutions and services.
