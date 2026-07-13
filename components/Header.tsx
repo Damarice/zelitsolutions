@@ -27,8 +27,9 @@ export default function Header() {
             alt="Zelitsolutions"
             width={120}
             height={120}
+            priority
             className="rounded object-contain"
-            style={{ width: 'auto', height: '48px' }}
+            style={{ width: '100%', height: '48px', maxWidth: '120px' }}
           />
         </Link>
 
