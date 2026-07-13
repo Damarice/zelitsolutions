@@ -18,11 +18,30 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (min-width: 640px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 19px;
+  }
+}
+
 body {
   color: #1f2937;
   background: #ffffff;
   line-height: 1.6;
   font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {

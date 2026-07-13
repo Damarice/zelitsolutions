@@ -285,7 +285,7 @@ export default function Home() {
                 title: 'IT Infrastructure Security Guide', 
                 date: 'Jan 10, 2026', 
                 category: 'IT Services',
-                image: 'https://images.unsplash.com/photo-1555949519-2f4c9c159ba4?w=500&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
                 desc: 'Essential security measures to protect your business infrastructure from threats.'
               },
               { 
@@ -305,13 +305,13 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-4 md:p-6">
-                  <p className="text-[#00CED1] text-xs font-bold uppercase mb-2 md:mb-3">{blog.category}</p>
-                  <h3 className="text-base md:text-lg font-bold mb-2 md:mb-3 group-hover:text-[#00CED1] transition text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  <p className="text-[#00CED1] text-xs sm:text-sm font-bold uppercase mb-2 md:mb-3">{blog.category}</p>
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold mb-2 md:mb-3 group-hover:text-[#00CED1] transition text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
                     {blog.title}
                   </h3>
-                  <p className="text-xs md:text-sm text-gray-600 mb-3 md:mb-4">{blog.desc}</p>
-                  <p className="text-gray-600 text-xs md:text-sm mb-3 md:mb-4">{blog.date}</p>
-                  <Link href="#" className="inline-block text-[#00CED1] font-bold hover:text-cyan-600 inline-flex items-center gap-2 transition text-xs md:text-sm">
+                  <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-3 md:mb-4">{blog.desc}</p>
+                  <p className="text-gray-600 text-xs sm:text-sm mb-3 md:mb-4">{blog.date}</p>
+                  <Link href="#" className="inline-block text-[#00CED1] font-bold hover:text-cyan-600 inline-flex items-center gap-2 transition text-xs sm:text-sm">
                     Read More <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
                   </Link>
                 </div>
