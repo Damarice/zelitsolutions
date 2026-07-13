@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
@@ -81,7 +81,7 @@ export default function Footer() {
                 sales@zelitsolutions.com
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-[#00CED1]">📱</span>
+                <FontAwesomeIcon icon={faPhone} className="text-[#00CED1]" />
                 +254 714 635554
               </li>
             </ul>
