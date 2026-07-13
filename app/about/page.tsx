@@ -1,6 +1,8 @@
 'use client'
 
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar, faHandshake, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
 export default function About() {
   return (
@@ -59,17 +61,23 @@ export default function About() {
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 sm:mb-10 md:mb-12 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Our Core Values</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
               <div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg text-center hover:border-[#00CED1] transition">
-                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">⭐</div>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-[#00CED1]">
+                  <FontAwesomeIcon icon={faStar} />
+                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Excellence</h3>
                 <p className="text-sm sm:text-base text-gray-700">Committed to delivering the highest quality in everything we do</p>
               </div>
               <div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg text-center hover:border-[#00CED1] transition">
-                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">🤝</div>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-[#00CED1]">
+                  <FontAwesomeIcon icon={faHandshake} />
+                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Integrity</h3>
                 <p className="text-sm sm:text-base text-gray-700">Building trust through honesty and transparency</p>
               </div>
               <div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg text-center hover:border-[#00CED1] transition">
-                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">💡</div>
+                <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-[#00CED1]">
+                  <FontAwesomeIcon icon={faLightbulb} />
+                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Innovation</h3>
                 <p className="text-sm sm:text-base text-gray-700">Embracing new technologies and creative solutions</p>
               </div>

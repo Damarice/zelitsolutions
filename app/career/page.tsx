@@ -3,38 +3,8 @@
 import Link from 'next/link'
 
 export default function Career() {
-  const positions = [
-    {
-      title: 'Full Stack Developer',
-      department: 'Engineering',
-      type: 'Full-time',
-      location: 'On-site',
-      description: 'We are looking for an experienced Full Stack Developer to join our development team and build amazing web applications.',
-    },
-    {
-      title: 'Network Engineer',
-      department: 'IT Infrastructure',
-      type: 'Full-time',
-      location: 'On-site',
-      description: 'Seeking a skilled Network Engineer to design, implement, and maintain network infrastructure.',
-    },
-    {
-      title: 'IT Support Specialist',
-      department: 'Support',
-      type: 'Full-time',
-      location: 'Hybrid',
-      description: 'Join our support team to provide technical assistance and excellent customer service to our clients.',
-    }
-  ]
-
-  const benefits = [
-    { title: 'Professional Growth', desc: 'Continuous learning and development opportunities', icon: '💼' },
-    { title: 'Health Benefits', desc: 'Comprehensive health insurance and wellness programs', icon: '🏥' },
-    { title: 'Work-Life Balance', desc: 'Flexible working hours and vacation time', icon: '⚖️' },
-  ]
-
   return (
-    <div className="bg-slate-900 text-white">
+    <div className="bg-white text-gray-900">
       {/* Hero Section */}
       <section className="relative py-12 sm:py-20 md:py-24 min-h-[300px] sm:min-h-[350px] md:min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
@@ -43,87 +13,61 @@ export default function Career() {
             alt="Career"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 to-slate-900/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 to-white/60"></div>
         </div>
-        <div className="relative z-10 container mx-auto px-4">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Join Our <span className="#00CED1">Team</span>
+        <div className="relative z-10 container mx-auto px-4 md:px-8">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Join Our <span className="text-[#00CED1]">Team</span>
           </h1>
-          <p className="text-2xl text-gray-300">
+          <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-gray-700 max-w-2xl">
             Build your career with Zelitsolutions and shape the future of IT
           </p>
         </div>
       </section>
 
-      {/* Why Join Us */}
-      <section className="py-24 bg-slate-900">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>Why Work With Us?</h2>
-            <p className="text-xl text-gray-400">
-              Great benefits and opportunities for growth in a dynamic environment
+      {/* Career Info */}
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
+          <div className="mb-12 sm:mb-16 md:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Why Work With Us?</h2>
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-8 sm:mb-12 leading-relaxed">
+              We're always looking for talented individuals to join our growing team. While we don't have specific openings at the moment, we value professional relationships and encourage you to reach out about future opportunities.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-24">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="bg-slate-800 border border-slate-700 p-10 rounded-lg text-center hover:#00CED1 transition">
-                <div className="text-5xl mb-6">{benefit.icon}</div>
-                <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-400">{benefit.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Open Positions */}
-          <div>
-            <h2 className="text-5xl font-bold mb-12" style={{ fontFamily: "'Playfair Display', serif" }}>Open Positions</h2>
-            <div className="space-y-6">
-              {positions.map((position, index) => (
-                <div 
-                  key={index}
-                  className="bg-slate-800 border border-slate-700 rounded-lg p-8 hover:#00CED1 transition"
-                >
-                  <div className="mb-4">
-                    <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
-                      {position.title}
-                    </h3>
-                    <div className="flex gap-4 text-sm text-gray-400 mb-4">
-                      <span className="flex items-center gap-2">📂 {position.department}</span>
-                      <span className="flex items-center gap-2">⏰ {position.type}</span>
-                      <span className="flex items-center gap-2">📍 {position.location}</span>
-                    </div>
-                  </div>
-                  <p className="text-gray-400 mb-6 leading-relaxed">{position.description}</p>
-                  <Link 
-                    href="/contact"
-                    className="inline-block #00CED1 #00CED1 text-white px-6 py-2 rounded font-bold transition"
-                  >
-                    Apply Now
-                  </Link>
-                </div>
-              ))}
+          {/* Culture Values */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+            <div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg hover:border-[#00CED1] transition">
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">💼</div>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Professional Growth</h3>
+              <p className="text-sm sm:text-base text-gray-700">Continuous learning and development opportunities</p>
+            </div>
+            <div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg hover:border-[#00CED1] transition">
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">🤝</div>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Collaborative Culture</h3>
+              <p className="text-sm sm:text-base text-gray-700">Work with a supportive and innovative team</p>
+            </div>
+            <div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg hover:border-[#00CED1] transition">
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">🎯</div>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Impact-Driven Work</h3>
+              <p className="text-sm sm:text-base text-gray-700">Make meaningful contributions to client success</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-r #00CED1 #00CED1">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-5xl font-bold mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Don't See Your Role?
+      <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-r from-[#00CED1] to-cyan-400">
+        <div className="container mx-auto px-4 md:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Interested in Joining Us?
           </h2>
-          <p className="text-xl #00CED1 mb-10">
-            Send us your resume and we'll keep you in mind for future opportunities
-          </p>
+          <p className="text-sm sm:text-base md:text-xl text-white/90 mb-6 sm:mb-10 max-w-2xl mx-auto">Get in touch with our team to discuss career opportunities</p>
           <Link 
             href="/contact"
-            className="inline-block bg-white #00CED1 hover:bg-cyan-500 px-10 py-4 rounded font-bold transition text-lg"
+            className="inline-block bg-white text-[#00CED1] hover:bg-gray-100 px-4 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 rounded font-bold transition text-sm sm:text-base md:text-lg"
           >
-            Submit Your Resume
+            Contact Us
           </Link>
         </div>
       </section>
