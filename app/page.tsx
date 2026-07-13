@@ -229,60 +229,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Case Studies Section ── */}
-      <section className="py-12 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="mb-8 md:mb-16">
-            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Success Stories</p>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Client Transformations
-            </h2>
-            <p className="text-sm md:text-xl text-gray-600">Real results from real clients</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                title: 'E-Commerce Platform',
-                desc: 'Scaled infrastructure to handle 300% traffic increase',
-                result: '99.9% Uptime',
-                industry: 'Retail'
-              },
-              {
-                title: 'Financial Services',
-                desc: 'Implemented enterprise-grade security solutions',
-                result: 'Zero Breaches',
-                industry: 'Finance'
-              },
-              {
-                title: 'Healthcare Provider',
-                desc: 'Modernized IT infrastructure and network',
-                result: '50% Cost Reduction',
-                industry: 'Healthcare'
-              },
-            ].map((study, i) => (
-              <div key={i} className="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden hover:border-[#00CED1] hover:shadow-lg transition group">
-                <div className="h-32 md:h-40 bg-gradient-to-br from-[#00CED1]/10 to-gray-100 relative">
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                    <FontAwesomeIcon icon={faPlay} className="text-[#00CED1] text-2xl md:text-3xl" />
-                  </div>
-                </div>
-                <div className="p-4 md:p-6">
-                  <p className="text-[#00CED1] text-xs md:text-sm font-bold uppercase mb-2">{study.industry}</p>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
-                    {study.title}
-                  </h3>
-                  <p className="text-sm md:text-base text-gray-600 mb-3 md:mb-4">{study.desc}</p>
-                  <div className="pt-3 md:pt-4 border-t border-gray-200">
-                    <p className="text-[#00CED1] font-bold text-base md:text-lg">{study.result}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Testimonials Section ── */}
       <section className="py-12 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
