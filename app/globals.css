@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --turquoise-blue: #00CED1;
+  --light-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1f2937;
+  background: #ffffff;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.3s ease;
+}
