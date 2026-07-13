@@ -62,28 +62,6 @@ export default function OurClients() {
               </div>
             ))}
           </div>
-
-          {/* Stats */}
-          <div className="bg-gradient-to-r from-[#00CED1] to-cyan-400 rounded-lg p-6 sm:p-8 md:p-12">
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 text-center">
-              <div>
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-3 text-white">500+</div>
-                <p className="text-xs sm:text-sm md:text-base text-white/90 font-semibold">Happy Clients</p>
-              </div>
-              <div>
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-3 text-white">1000+</div>
-                <p className="text-xs sm:text-sm md:text-base text-white/90 font-semibold">Projects Completed</p>
-              </div>
-              <div>
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-3 text-white">10+</div>
-                <p className="text-xs sm:text-sm md:text-base text-white/90 font-semibold">Years Experience</p>
-              </div>
-              <div>
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-3 text-white">24/7</div>
-                <p className="text-xs sm:text-sm md:text-base text-white/90 font-semibold">Support Available</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

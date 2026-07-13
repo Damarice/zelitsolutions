@@ -1,6 +1,8 @@
 'use client'
 
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBriefcase, faUsers, faBullseye } from '@fortawesome/free-solid-svg-icons'
 
 export default function Career() {
   return (
@@ -38,17 +40,23 @@ export default function Career() {
           {/* Culture Values */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             <div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg hover:border-[#00CED1] transition">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">💼</div>
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-[#00CED1]">
+                <FontAwesomeIcon icon={faBriefcase} />
+              </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Professional Growth</h3>
               <p className="text-sm sm:text-base text-gray-700">Continuous learning and development opportunities</p>
             </div>
             <div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg hover:border-[#00CED1] transition">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">🤝</div>
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-[#00CED1]">
+                <FontAwesomeIcon icon={faUsers} />
+              </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Collaborative Culture</h3>
               <p className="text-sm sm:text-base text-gray-700">Work with a supportive and innovative team</p>
             </div>
             <div className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg hover:border-[#00CED1] transition">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">🎯</div>
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-[#00CED1]">
+                <FontAwesomeIcon icon={faBullseye} />
+              </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Impact-Driven Work</h3>
               <p className="text-sm sm:text-base text-gray-700">Make meaningful contributions to client success</p>
             </div>
