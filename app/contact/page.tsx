@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone, faClock } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -90,7 +90,7 @@ export default function Contact() {
                 <div className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-10 sm:h-12 w-10 sm:w-12 rounded-lg bg-[#00CED1]/10">
-                      <span className="text-lg sm:text-2xl">⏰</span>
+                      <FontAwesomeIcon icon={faClock} className="text-lg sm:text-2xl text-[#00CED1]" />
                     </div>
                   </div>
                   <div>
