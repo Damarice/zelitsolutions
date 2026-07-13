@@ -36,7 +36,7 @@ export default function Career() {
   return (
     <div className="bg-slate-900 text-white">
       {/* Hero Section */}
-      <section className="relative py-32 min-h-[500px] flex items-center overflow-hidden">
+      <section className="relative py-12 sm:py-20 md:py-24 min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop"

@@ -13,7 +13,7 @@ export default function Home() {
     <div className="bg-white text-gray-900">
 
       {/* ── Hero Section ── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 py-12 md:py-20">
+        <div className="relative z-10 container mx-auto px-4 py-8 md:py-12">
           <div className="max-w-3xl">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">
               Managed IT Services Built Around Your Business
