@@ -60,7 +60,7 @@ export default function OurClients() {
       {/* Client Overview */}
       <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
-          <div className="text-center mb-12 sm:mb-16 md:mb-20">
+          <div className="mb-12 sm:mb-16 md:mb-20">
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Companies We Work With</h2>
             <p className="text-sm sm:text-base md:text-xl text-gray-600">
               We're proud to serve a diverse portfolio of clients across multiple industries
@@ -86,7 +86,7 @@ export default function OurClients() {
 
           {/* Testimonials */}
           <div className="mb-12 sm:mb-16 md:mb-24">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-center text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               What Our Clients Say
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">

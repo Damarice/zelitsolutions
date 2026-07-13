@@ -69,7 +69,7 @@ export default function Portfolio() {
       {/* Projects Section */}
       <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
-          <div className="text-center mb-12 sm:mb-16 md:mb-20">
+          <div className="mb-12 sm:mb-16 md:mb-20">
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Featured Projects</h2>
             <p className="text-sm sm:text-base md:text-xl text-gray-600">
               Explore some of the innovative solutions we've delivered
@@ -111,7 +111,7 @@ export default function Portfolio() {
       {/* Service Highlights */}
       <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-center text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Our Expertise</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>Our Expertise</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
             <div className="bg-white border border-gray-200 p-6 sm:p-8 rounded-lg hover:border-[#00CED1] transition">
               <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🌐</div>
@@ -139,7 +139,7 @@ export default function Portfolio() {
 
       {/* CTA */}
       <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-r from-[#00CED1] to-cyan-400">
-        <div className="container mx-auto px-4 md:px-8 text-center">
+        <div className="container mx-auto px-4 md:px-8">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
             Have a Project in Mind?
           </h2>

@@ -66,12 +66,12 @@ export default function Home() {
       {/* ── Services Overview Section ── */}
       <section className="py-12 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="mb-8 md:mb-16">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Our Services</p>
             <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               What We Deliver
             </h2>
-            <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm md:text-xl text-gray-600 max-w-3xl">
               Comprehensive IT solutions designed to power your business growth and keep you secure.
             </p>
           </div>
@@ -181,7 +181,7 @@ export default function Home() {
       {/* ── Process Section ── */}
       <section className="py-12 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="mb-8 md:mb-16">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Our Approach</p>
             <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               How We Work
@@ -226,7 +226,7 @@ export default function Home() {
       {/* ── Case Studies Section ── */}
       <section className="py-12 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="mb-8 md:mb-16">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Success Stories</p>
             <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               Client Transformations
@@ -280,7 +280,7 @@ export default function Home() {
       {/* ── Testimonials Section ── */}
       <section className="py-12 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="mb-8 md:mb-16">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Client Feedback</p>
             <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               What Our Clients Say
@@ -313,7 +313,7 @@ export default function Home() {
       {/* ── Blog Section ── */}
       <section className="py-12 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="mb-8 md:mb-16">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Latest Insights</p>
             <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               Resources & News
