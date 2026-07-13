@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faUsers, faBriefcase, faTrophy,
   faGlobe, faLaptop, faEnvelope, faNetworkWired,
-  faCheckCircle, faArrowRight, faStar, faPlay, faPhone
+  faCheckCircle, faArrowRight, faStar, faPlay, faPhone, faServer, faDesktop
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
@@ -77,27 +77,32 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
             {[
-              { 
-                title: 'Managed IT Services', 
-                desc: 'Proactive monitoring, support, and infrastructure management.',
-                icon: faBriefcase
-              },
               { 
                 title: 'Website Development', 
                 desc: 'Custom websites that drive results and engage customers.',
                 icon: faGlobe
               },
               { 
-                title: 'Network Solutions', 
-                desc: 'Structured cabling and enterprise networking infrastructure.',
-                icon: faNetworkWired
+                title: 'Managed IT Services', 
+                desc: 'Proactive monitoring, support, and infrastructure management.',
+                icon: faBriefcase
               },
               { 
-                title: 'Cybersecurity', 
-                desc: 'Advanced security solutions to protect your data and systems.',
-                icon: faCheckCircle
+                title: 'Sale of Computers & Accessories', 
+                desc: 'Quality hardware and computer accessories for your business.',
+                icon: faDesktop
+              },
+              { 
+                title: 'Domain Registration & Email Services', 
+                desc: 'Secure domain registration and professional email solutions.',
+                icon: faEnvelope
+              },
+              { 
+                title: 'Structured Cabling & Networking Solutions', 
+                desc: 'Enterprise-grade network infrastructure and cabling.',
+                icon: faNetworkWired
               },
             ].map((svc, i) => (
               <div key={i} className="bg-white border border-gray-200 p-4 md:p-8 rounded-lg hover:border-[#00CED1] hover:shadow-lg transition group">
