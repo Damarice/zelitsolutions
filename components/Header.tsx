@@ -21,7 +21,7 @@ export default function Header() {
     <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center flex-shrink-0">
           <Image
             src="/logo.jpeg"
             alt="Zelitsolutions"
@@ -29,7 +29,7 @@ export default function Header() {
             height={120}
             priority
             className="rounded object-contain"
-            style={{ width: '100%', height: '48px', maxWidth: '120px' }}
+            style={{ width: '100%', height: '40px', maxWidth: '100px' }}
           />
         </Link>
 

@@ -27,9 +27,6 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 py-8 md:py-12">
           <div className="max-w-3xl">
-            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">
-              Managed IT Services Built Around Your Business
-            </p>
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight text-gray-900" style={{ fontFamily: "'Inter', sans-serif" }}>
               Transform Your IT <span className="text-[#00CED1]">Infrastructure</span>
             </h1>
@@ -285,7 +282,7 @@ export default function Home() {
                 title: 'IT Infrastructure Security Guide', 
                 date: 'Jan 10, 2026', 
                 category: 'IT Services',
-                image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1516321318423-f06f70d504d0?w=500&h=300&fit=crop',
                 desc: 'Essential security measures to protect your business infrastructure from threats.'
               },
               { 

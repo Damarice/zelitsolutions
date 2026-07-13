@@ -14,25 +14,25 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 20px;
   scroll-behavior: smooth;
 }
 
 @media (min-width: 640px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
