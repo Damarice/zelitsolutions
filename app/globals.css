@@ -22,12 +22,12 @@ body {
   color: #1f2937;
   background: #ffffff;
   line-height: 1.6;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Smooth transitions */

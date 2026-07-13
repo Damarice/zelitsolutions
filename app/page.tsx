@@ -13,7 +13,7 @@ export default function Home() {
     <div className="bg-white text-gray-900">
 
       {/* ── Hero Section ── */}
-      <section className="relative h-screen min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
@@ -25,38 +25,38 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 py-20">
+        <div className="relative z-10 container mx-auto px-4 py-12 md:py-20">
           <div className="max-w-3xl">
-            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-sm mb-4">
+            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">
               Managed IT Services Built Around Your Business
             </p>
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight text-gray-900" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight text-gray-900" style={{ fontFamily: "'Inter', sans-serif" }}>
               Transform Your IT <span className="text-[#00CED1]">Infrastructure</span>
             </h1>
-            <p className="text-xl text-gray-700 mb-8 max-w-2xl leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 md:mb-8 max-w-2xl leading-relaxed">
               Strategic IT solutions that scale with your business. From managed services to cybersecurity, we keep your operations running smoothly.
             </p>
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex gap-2 md:gap-4 flex-wrap">
               <Link 
                 href="/contact" 
-                className="bg-[#00CED1] hover:bg-cyan-500 text-white px-8 py-4 rounded font-bold transition text-lg"
+                className="bg-[#00CED1] hover:bg-cyan-500 text-white px-4 md:px-8 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg"
               >
                 Get Started
               </Link>
               <a 
                 href="tel:+254714635554" 
-                className="border-2 border-[#00CED1] text-[#00CED1] hover:bg-[#00CED1] hover:text-white px-8 py-4 rounded font-bold transition text-lg"
+                className="border-2 border-[#00CED1] text-[#00CED1] hover:bg-[#00CED1] hover:text-white px-4 md:px-8 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg"
               >
-                Call: +254 714 635554
+                Call Now
               </a>
             </div>
           </div>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+        <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-10">
           <div className="animate-bounce text-gray-600">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
           </div>
@@ -64,19 +64,19 @@ export default function Home() {
       </section>
 
       {/* ── Services Overview Section ── */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-12 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-sm mb-4">Our Services</p>
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <div className="text-center mb-8 md:mb-16">
+            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Our Services</p>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               What We Deliver
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive IT solutions designed to power your business growth and keep you secure.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
             {[
               { 
                 title: 'Managed IT Services', 
@@ -99,14 +99,14 @@ export default function Home() {
                 icon: faCheckCircle
               },
             ].map((svc, i) => (
-              <div key={i} className="bg-white border border-gray-200 p-8 rounded-lg hover:border-[#00CED1] hover:shadow-lg transition group">
-                <div className="w-14 h-14 bg-[#00CED1]/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#00CED1] transition">
-                  <FontAwesomeIcon icon={svc.icon} className="text-2xl text-[#00CED1] group-hover:text-white" />
+              <div key={i} className="bg-white border border-gray-200 p-4 md:p-8 rounded-lg hover:border-[#00CED1] hover:shadow-lg transition group">
+                <div className="w-12 md:w-14 h-12 md:h-14 bg-[#00CED1]/10 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#00CED1] transition">
+                  <FontAwesomeIcon icon={svc.icon} className="text-lg md:text-2xl text-[#00CED1] group-hover:text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {svc.title}
                 </h3>
-                <p className="text-gray-600">{svc.desc}</p>
+                <p className="text-sm md:text-base text-gray-600">{svc.desc}</p>
               </div>
             ))}
           </div>
@@ -114,35 +114,35 @@ export default function Home() {
       </section>
 
       {/* ── Why Choose Us Section ── */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center max-w-6xl mx-auto">
             <div>
-              <p className="text-[#00CED1] font-bold uppercase tracking-widest text-sm mb-4">Why Zelitsolutions</p>
-              <h2 className="text-5xl font-bold mb-8 leading-tight text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Why Zelitsolutions</p>
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 md:mb-8 leading-tight text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Your Trusted IT Partner
               </h2>
-              <div className="space-y-6">
+              <div className="space-y-4 md:space-y-6">
                 {[
                   { title: '10+ Years Experience', desc: 'Proven track record in IT solutions and digital transformation.' },
                   { title: '500+ Happy Clients', desc: 'Trusted by businesses across multiple industries and sectors.' },
                   { title: '24/7 Support', desc: 'Round-the-clock technical support to keep your business running.' },
                   { title: '50+ Expert Team', desc: 'Skilled professionals dedicated to your success.' },
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-[#00CED1]/10 rounded-lg flex items-center justify-center">
-                      <FontAwesomeIcon icon={faCheckCircle} className="text-[#00CED1] text-xl" />
+                  <div key={i} className="flex gap-3 md:gap-4">
+                    <div className="flex-shrink-0 w-10 md:w-12 h-10 md:h-12 bg-[#00CED1]/10 rounded-lg flex items-center justify-center">
+                      <FontAwesomeIcon icon={faCheckCircle} className="text-[#00CED1] text-lg md:text-xl" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-lg mb-2 text-gray-900">{item.title}</h4>
-                      <p className="text-gray-600">{item.desc}</p>
+                      <h4 className="font-bold text-base md:text-lg mb-1 md:mb-2 text-gray-900">{item.title}</h4>
+                      <p className="text-sm md:text-base text-gray-600">{item.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
               <Link 
                 href="/about" 
-                className="inline-block mt-8 text-[#00CED1] font-bold hover:text-cyan-600 inline-flex items-center gap-2 transition"
+                className="inline-block mt-6 md:mt-8 text-[#00CED1] font-bold hover:text-cyan-600 inline-flex items-center gap-2 transition text-sm md:text-base"
               >
                 Learn More <FontAwesomeIcon icon={faArrowRight} />
               </Link>
@@ -160,9 +160,9 @@ export default function Home() {
       </section>
 
       {/* ── Stats Section ── */}
-      <section className="py-20 bg-gradient-to-r from-[#00CED1] to-cyan-400">
+      <section className="py-12 md:py-20 bg-gradient-to-r from-[#00CED1] to-cyan-400">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto text-center">
             {[
               { number: '500+', label: 'Happy Clients' },
               { number: '1000+', label: 'Projects Delivered' },
@@ -170,8 +170,8 @@ export default function Home() {
               { number: '10+', label: 'Years in Business' },
             ].map((stat, i) => (
               <div key={i}>
-                <div className="text-4xl md:text-5xl font-bold mb-2 text-white">{stat.number}</div>
-                <p className="text-white/90 font-semibold">{stat.label}</p>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 md:mb-2 text-white">{stat.number}</div>
+                <p className="text-white/90 font-semibold text-xs md:text-sm lg:text-base">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -179,16 +179,16 @@ export default function Home() {
       </section>
 
       {/* ── Process Section ── */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-12 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-sm mb-4">Our Approach</p>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <div className="text-center mb-8 md:mb-16">
+            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Our Approach</p>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               How We Work
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {[
               { 
                 num: '01',
@@ -208,14 +208,14 @@ export default function Home() {
             ].map((step, i) => (
               <div key={i} className="relative">
                 {i < 2 && (
-                  <div className="hidden md:block absolute top-20 -right-4 w-8 h-1 bg-gradient-to-r from-[#00CED1] to-transparent"></div>
+                  <div className="hidden md:block absolute top-16 md:top-20 -right-4 w-8 h-1 bg-gradient-to-r from-[#00CED1] to-transparent"></div>
                 )}
-                <div className="bg-white border border-gray-200 p-8 rounded-lg hover:border-[#00CED1] transition">
-                  <div className="text-4xl font-bold text-[#00CED1] mb-4">{step.num}</div>
-                  <h3 className="text-2xl font-bold mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <div className="bg-white border border-gray-200 p-6 md:p-8 rounded-lg hover:border-[#00CED1] transition">
+                  <div className="text-3xl md:text-4xl font-bold text-[#00CED1] mb-3 md:mb-4">{step.num}</div>
+                  <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
                     {step.title}
                   </h3>
-                  <p className="text-gray-600">{step.desc}</p>
+                  <p className="text-sm md:text-base text-gray-600">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -224,17 +224,17 @@ export default function Home() {
       </section>
 
       {/* ── Case Studies Section ── */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-sm mb-4">Success Stories</p>
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <div className="text-center mb-8 md:mb-16">
+            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Success Stories</p>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-6 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               Client Transformations
             </h2>
-            <p className="text-xl text-gray-600">Real results from real clients</p>
+            <p className="text-sm md:text-xl text-gray-600">Real results from real clients</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {[
               {
                 title: 'E-Commerce Platform',
@@ -256,19 +256,19 @@ export default function Home() {
               },
             ].map((study, i) => (
               <div key={i} className="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden hover:border-[#00CED1] hover:shadow-lg transition group">
-                <div className="h-40 bg-gradient-to-br from-[#00CED1]/10 to-gray-100 relative">
+                <div className="h-32 md:h-40 bg-gradient-to-br from-[#00CED1]/10 to-gray-100 relative">
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                    <FontAwesomeIcon icon={faPlay} className="text-[#00CED1] text-3xl" />
+                    <FontAwesomeIcon icon={faPlay} className="text-[#00CED1] text-2xl md:text-3xl" />
                   </div>
                 </div>
-                <div className="p-6">
-                  <p className="text-[#00CED1] text-sm font-bold uppercase mb-2">{study.industry}</p>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <div className="p-4 md:p-6">
+                  <p className="text-[#00CED1] text-xs md:text-sm font-bold uppercase mb-2">{study.industry}</p>
+                  <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
                     {study.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4">{study.desc}</p>
-                  <div className="pt-4 border-t border-gray-200">
-                    <p className="text-[#00CED1] font-bold text-lg">{study.result}</p>
+                  <p className="text-sm md:text-base text-gray-600 mb-3 md:mb-4">{study.desc}</p>
+                  <div className="pt-3 md:pt-4 border-t border-gray-200">
+                    <p className="text-[#00CED1] font-bold text-base md:text-lg">{study.result}</p>
                   </div>
                 </div>
               </div>
@@ -278,31 +278,31 @@ export default function Home() {
       </section>
 
       {/* ── Testimonials Section ── */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-12 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-sm mb-4">Client Feedback</p>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <div className="text-center mb-8 md:mb-16">
+            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Client Feedback</p>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               What Our Clients Say
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-8 max-w-5xl mx-auto">
             {[
               { text: 'Exceptional service and true partnership. They understand our business.', author: 'John Smith', role: 'CEO, Tech Corp' },
               { text: 'Transformed our IT infrastructure completely. Highly recommended!', author: 'Sarah Johnson', role: 'CTO, Finance Inc' },
               { text: 'Professional, reliable, and always available. Best decision we made.', author: 'Mike Chen', role: 'Director, Healthcare Solutions' },
             ].map((t, i) => (
-              <div key={i} className="bg-white border border-gray-200 p-8 rounded-lg hover:shadow-lg transition">
-                <div className="flex gap-1 mb-4">
+              <div key={i} className="bg-white border border-gray-200 p-4 md:p-8 rounded-lg hover:shadow-lg transition">
+                <div className="flex gap-1 mb-3 md:mb-4">
                   {[...Array(5)].map((_, j) => (
-                    <FontAwesomeIcon key={j} icon={faStar} className="text-yellow-400" />
+                    <FontAwesomeIcon key={j} icon={faStar} className="text-yellow-400 text-sm md:text-base" />
                   ))}
                 </div>
-                <p className="text-gray-700 italic mb-6 leading-relaxed">"{t.text}"</p>
+                <p className="text-gray-700 italic mb-4 md:mb-6 leading-relaxed text-sm md:text-base">"{t.text}"</p>
                 <div>
-                  <p className="font-bold text-gray-900">{t.author}</p>
-                  <p className="text-gray-600 text-sm">{t.role}</p>
+                  <p className="font-bold text-gray-900 text-sm md:text-base">{t.author}</p>
+                  <p className="text-gray-600 text-xs md:text-sm">{t.role}</p>
                 </div>
               </div>
             ))}
@@ -311,30 +311,30 @@ export default function Home() {
       </section>
 
       {/* ── Blog Section ── */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-sm mb-4">Latest Insights</p>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <div className="text-center mb-8 md:mb-16">
+            <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Latest Insights</p>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
               Resources & News
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-8 max-w-5xl mx-auto">
             {[
               { title: 'Cybersecurity Trends in 2026', date: 'Jan 15, 2026', category: 'Security' },
               { title: 'Cloud Migration Best Practices', date: 'Jan 10, 2026', category: 'Cloud' },
               { title: 'Network Infrastructure Guide', date: 'Jan 5, 2026', category: 'Infrastructure' },
             ].map((blog, i) => (
               <article key={i} className="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden hover:border-[#00CED1] hover:shadow-lg transition group">
-                <div className="h-48 bg-gradient-to-br from-[#00CED1]/10 to-gray-100"></div>
-                <div className="p-6">
-                  <p className="text-[#00CED1] text-xs font-bold uppercase mb-3">{blog.category}</p>
-                  <h3 className="text-lg font-bold mb-3 group-hover:text-[#00CED1] transition text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <div className="h-24 md:h-48 bg-gradient-to-br from-[#00CED1]/10 to-gray-100"></div>
+                <div className="p-4 md:p-6">
+                  <p className="text-[#00CED1] text-xs font-bold uppercase mb-2 md:mb-3">{blog.category}</p>
+                  <h3 className="text-base md:text-lg font-bold mb-2 md:mb-3 group-hover:text-[#00CED1] transition text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
                     {blog.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{blog.date}</p>
-                  <Link href="#" className="inline-block mt-4 text-[#00CED1] font-bold hover:text-cyan-600 inline-flex items-center gap-2 transition text-sm">
+                  <p className="text-gray-600 text-xs md:text-sm mb-3 md:mb-4">{blog.date}</p>
+                  <Link href="#" className="inline-block text-[#00CED1] font-bold hover:text-cyan-600 inline-flex items-center gap-2 transition text-xs md:text-sm">
                     Read More <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
                   </Link>
                 </div>
@@ -345,24 +345,24 @@ export default function Home() {
       </section>
 
       {/* ── Final CTA Section ── */}
-      <section className="py-24 bg-gradient-to-r from-[#00CED1] to-cyan-400">
+      <section className="py-12 md:py-24 bg-gradient-to-r from-[#00CED1] to-cyan-400">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
             Ready to Elevate Your IT?
           </h2>
-          <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-white/90 mb-6 md:mb-10 max-w-2xl mx-auto leading-relaxed">
             Let's discuss how Zelitsolutions can transform your business through strategic IT solutions.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
+          <div className="flex gap-2 md:gap-4 justify-center flex-wrap">
             <Link 
               href="/contact" 
-              className="bg-white text-[#00CED1] hover:bg-gray-100 px-10 py-4 rounded font-bold transition text-lg"
+              className="bg-white text-[#00CED1] hover:bg-gray-100 px-6 md:px-10 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg"
             >
               Get In Touch
             </Link>
             <a 
               href="tel:+254714635554" 
-              className="border-2 border-white text-white hover:bg-white hover:text-[#00CED1] px-10 py-4 rounded font-bold transition text-lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#00CED1] px-6 md:px-10 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg"
             >
               📱 Call: +254 714 635554
             </a>
@@ -373,3 +373,4 @@ export default function Home() {
     </div>
   )
 }
+

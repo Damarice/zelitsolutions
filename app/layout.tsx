@@ -1,19 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Raleway } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppBubble from '@/components/WhatsAppBubble'
 
-const inter = Inter({ 
+const raleway = Raleway({ 
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
-})
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800', '900'],
-  variable: '--font-playfair'
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
 })
 
 export const metadata: Metadata = {
@@ -28,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${playfair.variable}`}>
+      <body className={raleway.className}>
         <Header />
         <main className="min-h-screen">
           {children}
