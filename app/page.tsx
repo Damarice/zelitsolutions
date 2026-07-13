@@ -274,17 +274,42 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-4 md:gap-8 max-w-5xl mx-auto">
             {[
-              { title: 'Cybersecurity Trends in 2026', date: 'Jan 15, 2026', category: 'Security' },
-              { title: 'Cloud Migration Best Practices', date: 'Jan 10, 2026', category: 'Cloud' },
-              { title: 'Network Infrastructure Guide', date: 'Jan 5, 2026', category: 'Infrastructure' },
+              { 
+                title: 'Website Development Best Practices', 
+                date: 'Jan 15, 2026', 
+                category: 'Web Development',
+                image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+                desc: 'Learn how to build responsive and engaging websites that convert visitors into customers.'
+              },
+              { 
+                title: 'IT Infrastructure Security Guide', 
+                date: 'Jan 10, 2026', 
+                category: 'IT Services',
+                image: 'https://images.unsplash.com/photo-1516321318423-f06f70d504d0?w=500&h=300&fit=crop',
+                desc: 'Essential security measures to protect your business infrastructure from threats.'
+              },
+              { 
+                title: 'Network Cabling & Setup Guide', 
+                date: 'Jan 5, 2026', 
+                category: 'Networking',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
+                desc: 'Complete guide to structured cabling and network infrastructure setup.'
+              },
             ].map((blog, i) => (
               <article key={i} className="bg-gray-50 border border-gray-200 rounded-lg overflow-hidden hover:border-[#00CED1] hover:shadow-lg transition group">
-                <div className="h-24 md:h-48 bg-gradient-to-br from-[#00CED1]/10 to-gray-100"></div>
+                <div className="h-24 md:h-48 bg-gradient-to-br from-[#00CED1]/10 to-gray-100 overflow-hidden">
+                  <img 
+                    src={blog.image} 
+                    alt={blog.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                  />
+                </div>
                 <div className="p-4 md:p-6">
                   <p className="text-[#00CED1] text-xs font-bold uppercase mb-2 md:mb-3">{blog.category}</p>
                   <h3 className="text-base md:text-lg font-bold mb-2 md:mb-3 group-hover:text-[#00CED1] transition text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
                     {blog.title}
                   </h3>
+                  <p className="text-xs md:text-sm text-gray-600 mb-3 md:mb-4">{blog.desc}</p>
                   <p className="text-gray-600 text-xs md:text-sm mb-3 md:mb-4">{blog.date}</p>
                   <Link href="#" className="inline-block text-[#00CED1] font-bold hover:text-cyan-600 inline-flex items-center gap-2 transition text-xs md:text-sm">
                     Read More <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
