@@ -105,9 +105,9 @@ export default function Home() {
                 icon: faNetworkWired
               },
             ].map((svc, i) => (
-              <div key={i} className="bg-white border border-gray-200 p-4 md:p-8 rounded-lg hover:border-[#00CED1] hover:shadow-lg transition group">
-                <div className="w-12 md:w-14 h-12 md:h-14 bg-[#00CED1]/10 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#00CED1] transition">
-                  <FontAwesomeIcon icon={svc.icon} className="text-lg md:text-2xl text-[#00CED1] group-hover:text-white" />
+              <div key={i} className="bg-white border border-gray-200 p-4 md:p-8 rounded-lg hover:border-[#00CED1] hover:shadow-lg transition group service-card">
+                <div className="w-12 md:w-14 h-12 md:h-14 bg-[#00CED1]/10 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#00CED1] transition group-hover:scale-110">
+                  <FontAwesomeIcon icon={svc.icon} className="text-lg md:text-2xl text-[#00CED1] group-hover:text-white transition" />
                 </div>
                 <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {svc.title}
@@ -212,11 +212,11 @@ export default function Home() {
                 desc: 'Execute the plan with minimal disruption to your business operations.'
               },
             ].map((step, i) => (
-              <div key={i} className="relative">
+              <div key={i} className="relative group hover-card">
                 {i < 2 && (
                   <div className="hidden md:block absolute top-16 md:top-20 -right-4 w-8 h-1 bg-gradient-to-r from-[#00CED1] to-transparent"></div>
                 )}
-                <div className="bg-white border border-gray-200 p-6 md:p-8 rounded-lg hover:border-[#00CED1] transition">
+                <div className="bg-white border border-gray-200 p-6 md:p-8 rounded-lg hover:border-[#00CED1] transition group-hover:shadow-lg">
                   <div className="text-3xl md:text-4xl font-bold text-[#00CED1] mb-3 md:mb-4">{step.num}</div>
                   <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
                     {step.title}
