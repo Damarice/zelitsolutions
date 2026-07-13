@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faUsers, faBriefcase, faTrophy,
   faGlobe, faLaptop, faEnvelope, faNetworkWired,
-  faCheckCircle, faArrowRight, faStar, faPlay
+  faCheckCircle, faArrowRight, faStar, faPlay, faPhone
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
@@ -45,8 +45,9 @@ export default function Home() {
               </Link>
               <a 
                 href="tel:+254714635554" 
-                className="border-2 border-[#00CED1] text-[#00CED1] hover:bg-[#00CED1] hover:text-white px-4 md:px-8 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg"
+                className="border-2 border-[#00CED1] text-[#00CED1] hover:bg-[#00CED1] hover:text-white px-4 md:px-8 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg inline-flex items-center gap-2"
               >
+                <FontAwesomeIcon icon={faPhone} className="text-sm md:text-base" />
                 Call Now
               </a>
             </div>
@@ -362,9 +363,10 @@ export default function Home() {
             </Link>
             <a 
               href="tel:+254714635554" 
-              className="border-2 border-white text-white hover:bg-white hover:text-[#00CED1] px-6 md:px-10 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#00CED1] px-6 md:px-10 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg inline-flex items-center gap-2"
             >
-              📱 Call: +254 714 635554
+              <FontAwesomeIcon icon={faPhone} className="text-sm md:text-base" />
+              Call: +254 714 635554
             </a>
           </div>
         </div>
