@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -12,14 +11,11 @@ export default function Footer() {
 
           {/* Logo & Brand */}
           <div>
-            <Image
+            <img
               src="/logo.jpeg"
               alt="Zelitsolutions"
-              width={150}
-              height={150}
-              priority
               className="rounded mb-4 object-contain"
-              style={{ width: 'auto', height: '60px' }}
+              style={{ height: '60px', width: 'auto' }}
             />
             <p className="text-sm text-gray-600 mb-6 leading-relaxed">
               Your trusted partner for comprehensive IT solutions and services.

@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -22,14 +21,11 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center flex-shrink-0">
-          <Image
+          <img
             src="/logo.jpeg"
             alt="Zelitsolutions"
-            width={150}
-            height={150}
-            priority
             className="rounded object-contain"
-            style={{ width: 'auto', height: '60px' }}
+            style={{ height: '60px', width: 'auto' }}
           />
         </Link>
 
