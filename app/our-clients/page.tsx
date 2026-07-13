@@ -14,27 +14,6 @@ export default function OurClients() {
     { name: 'Education Plus', industry: 'Education' },
   ]
 
-  const testimonials = [
-    {
-      text: "Zelitsolutions transformed our IT infrastructure. Their expertise and support have been invaluable to our business growth.",
-      author: "John Doe",
-      company: "Tech Corp",
-      role: "CEO"
-    },
-    {
-      text: "Professional, reliable, and always available when we need them. The best IT partner we've worked with.",
-      author: "Jane Smith",
-      company: "Innovation Ltd",
-      role: "CTO"
-    },
-    {
-      text: "Their website development service exceeded our expectations. Highly recommended!",
-      author: "Mike Johnson",
-      company: "Retail Solutions",
-      role: "Marketing Director"
-    }
-  ]
-
   return (
     <div className="bg-white text-gray-900">
       {/* Hero Section */}
@@ -82,32 +61,6 @@ export default function OurClients() {
                 <p className="text-xs sm:text-sm md:text-base text-gray-600">{client.industry}</p>
               </div>
             ))}
-          </div>
-
-          {/* Testimonials */}
-          <div className="mb-12 sm:mb-16 md:mb-24">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
-              What Our Clients Say
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-              {testimonials.map((testimonial, index) => (
-                <div 
-                  key={index}
-                  className="bg-gray-50 border border-gray-200 p-6 sm:p-8 rounded-lg hover:border-[#00CED1] transition"
-                >
-                  <div className="flex gap-1 mb-3 sm:mb-4">
-                    {[...Array(5)].map((_, j) => (
-                      <FontAwesomeIcon key={j} icon={faStar} className="text-yellow-400 text-xs sm:text-sm" />
-                    ))}
-                  </div>
-                  <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-4 sm:mb-6 italic leading-relaxed">"{testimonial.text}"</p>
-                  <div>
-                    <p className="font-bold text-xs sm:text-sm md:text-base text-gray-900">{testimonial.author}</p>
-                    <p className="text-gray-600 text-xs">{testimonial.role}, {testimonial.company}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Stats */}
