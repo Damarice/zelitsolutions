@@ -13,7 +13,7 @@ export default function Home() {
     <div className="bg-white text-gray-900">
 
       {/* ── Hero Section ── */}
-      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[300px] sm:min-h-[400px] md:min-h-[500px] flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img

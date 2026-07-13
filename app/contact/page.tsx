@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <div className="bg-white text-gray-900">
       {/* Hero Section */}
-      <section className="relative py-12 sm:py-20 md:py-24 min-h-[400px] flex items-center overflow-hidden">
+      <section className="relative py-12 sm:py-20 md:py-24 min-h-[300px] sm:min-h-[350px] md:min-h-[400px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop"
