@@ -7,20 +7,17 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 
 const slides = [
   {
-    title: 'Transform Your IT',
-    subtitle: 'Infrastructure',
+    title: 'Transform Your IT Infrastructure',
     description: 'From managed IT services and web development to domain registration and email solutions, we deliver comprehensive, scalable IT solutions that keep your business secure and connected.',
     image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&h=1080&fit=crop',
   },
   {
-    title: 'Complete Hardware',
-    subtitle: 'Solutions',
+    title: 'Complete Hardware Solutions',
     description: 'Computer hardware and structured cabling expertise combined with enterprise-grade network design to power your operations and scale with your growing business.',
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop',
   },
   {
-    title: 'Your Technology',
-    subtitle: 'Partner',
+    title: 'Your Technology Partner',
     description: 'Let Zelit Solutions Ltd handle your technology while you focus on what matters most—growing your business. Comprehensive, scalable IT solutions that keep you ahead of the curve.',
     image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop',
   },
@@ -78,13 +75,12 @@ export default function HeroSlider() {
                 Welcome to Zelitsolutions
               </p>
               <h1
-                className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 transition-all duration-700 delay-100 ${
+                className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 transition-all duration-700 delay-100 whitespace-nowrap ${
                   index === current ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                {slide.title} <br />
-                <span className="text-[#00CED1]">{slide.subtitle}</span>
+                {slide.title} <span className="text-[#00CED1]">.</span>
               </h1>
               <p
                 className={`text-base md:text-xl font-light max-w-2xl mx-auto mb-8 text-gray-200 transition-all duration-700 delay-200 ${
