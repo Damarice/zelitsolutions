@@ -217,8 +217,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-4 md:gap-8 max-w-5xl mx-auto">
             {[
-              { text: 'Exceptional service and true partnership. They understand our business.', author: 'John Smith', role: 'CEO, Tech Corp' },
-              { text: 'Transformed our IT infrastructure completely. Highly recommended!', author: 'Sarah Johnson', role: 'CTO, Finance Inc' },
+              { text: 'Exceptional service and true partnership. They understand our business.', author: 'James Kipchoge', role: 'CEO, Tech Corp' },
+              { text: 'Transformed our IT infrastructure completely. Highly recommended!', author: 'Grace Wanjiru', role: 'CTO, Finance Inc' },
               { text: 'Professional, reliable, and always available. Best decision we made.', author: 'Mike Chen', role: 'Director, Healthcare Solutions' },
             ].map((t, i) => (
               <div key={i} className="bg-white border border-gray-200 p-4 md:p-8 rounded-lg hover:shadow-lg transition">
