@@ -261,7 +261,7 @@ export default function Home() {
                 title: 'IT Infrastructure Security Guide', 
                 date: 'Jan 10, 2026', 
                 category: 'IT Services',
-                image: 'https://images.unsplash.com/photo-1516321318423-f06f70d504d0?w=500&h=300&fit=crop',
+                image: 'https://images.unsplash.com/photo-1563986768609-592f53202034?w=500&h=300&fit=crop',
                 desc: 'Essential security measures to protect your business infrastructure from threats.'
               },
               { 
