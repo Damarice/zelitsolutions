@@ -27,19 +27,19 @@ export default function HeroSlider() {
   const [current, setCurrent] = useState(0)
   const [animating, setAnimating] = useState(false)
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      goTo((current + 1) % slides.length)
-    }, 4000)
-    return () => clearInterval(timer)
-  }, [current])
-
   const goTo = (index: number) => {
     if (animating) return
     setAnimating(true)
     setCurrent(index)
     setTimeout(() => setAnimating(false), 700)
   }
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      goTo((current + 1) % slides.length)
+    }, 4000)
+    return () => clearInterval(timer)
+  }, [current, animating, goTo])
 
   const prev = () => goTo((current - 1 + slides.length) % slides.length)
   const next = () => goTo((current + 1) % slides.length)
