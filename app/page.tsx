@@ -1,5 +1,6 @@
 'use client'
 
+import HeroSlider from '@/components/HeroSlider'
 import Link from 'next/link'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,54 +15,8 @@ export default function Home() {
   return (
     <div className="bg-white text-gray-900">
 
-      {/* ── Hero Section ── */}
-      <section className="relative min-h-[300px] sm:min-h-[400px] md:min-h-[500px] flex items-center justify-center overflow-hidden">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&h=1080&fit=crop"
-            alt="Hero Background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/60"></div>
-        </div>
-
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 py-8 md:py-12">
-          <div className="max-w-3xl">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight text-gray-900" style={{ fontFamily: "'Inter', sans-serif" }}>
-              Transform Your IT <span className="text-[#00CED1]">Infrastructure</span>
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 md:mb-8 max-w-3xl leading-relaxed">
-              From managed IT services and web development to domain registration, email solutions, computer hardware, structured cabling, and network design, we deliver comprehensive, scalable IT solutions that keep your business secure, connected, and ahead of the curve. Partner with Zelit Solutions Ltd and let us handle your technology while you focus on what matters most—growing your business.
-            </p>
-            <div className="flex gap-2 md:gap-4 flex-wrap">
-              <Link 
-                href="/contact" 
-                className="bg-[#00CED1] hover:bg-cyan-500 text-white px-4 md:px-8 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg"
-              >
-                Get Started
-              </Link>
-              <a 
-                href="tel:+254714635554" 
-                className="border-2 border-[#00CED1] text-[#00CED1] hover:bg-[#00CED1] hover:text-white px-4 md:px-8 py-2 md:py-4 rounded font-bold transition text-sm md:text-lg inline-flex items-center gap-2"
-              >
-                <FontAwesomeIcon icon={faPhone} className="text-sm md:text-base" />
-                Call Now
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-10">
-          <div className="animate-bounce text-gray-600">
-            <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-        </div>
-      </section>
+      {/* ── Hero Slider Section ── */}
+      <HeroSlider />
 
       {/* ── Services Overview Section ── */}
       <section className="py-12 md:py-24 bg-gray-50">

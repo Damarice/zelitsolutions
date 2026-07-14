@@ -7,21 +7,21 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 
 const slides = [
   {
-    title: 'Creative & Innovative',
-    subtitle: 'Digital Solution',
-    description: 'We provide cutting-edge IT solutions to transform your business and drive growth.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=1080&fit=crop',
-  },
-  {
-    title: 'Professional IT Services',
-    subtitle: 'For Your Business',
-    description: 'Comprehensive managed IT services and expert support available around the clock.',
+    title: 'Transform Your IT',
+    subtitle: 'Infrastructure',
+    description: 'From managed IT services and web development to domain registration and email solutions, we deliver comprehensive, scalable IT solutions that keep your business secure and connected.',
     image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&h=1080&fit=crop',
   },
   {
-    title: 'Expert Network Solutions',
-    subtitle: 'Built For Success',
-    description: 'Structured cabling and networking infrastructure designed to scale with your business.',
+    title: 'Complete Hardware',
+    subtitle: 'Solutions',
+    description: 'Computer hardware and structured cabling expertise combined with enterprise-grade network design to power your operations and scale with your growing business.',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop',
+  },
+  {
+    title: 'Your Technology',
+    subtitle: 'Partner',
+    description: 'Let Zelit Solutions Ltd handle your technology while you focus on what matters most—growing your business. Comprehensive, scalable IT solutions that keep you ahead of the curve.',
     image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop',
   },
 ]
