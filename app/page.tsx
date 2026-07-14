@@ -19,7 +19,7 @@ export default function Home() {
       <HeroSlider />
 
       {/* ── Services Overview Section ── */}
-      <section className="py-12 md:py-24 bg-gray-50">
+      <section className="pt-4 pb-12 md:pb-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="mb-8 md:mb-16">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Our Services</p>
@@ -96,7 +96,7 @@ export default function Home() {
       </section>
 
       {/* ── Why Choose Us Section ── */}
-      <section className="py-12 md:py-24 bg-white">
+      <section className="pt-4 pb-12 md:pb-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center max-w-6xl mx-auto">
             <div>
@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* ── Stats Section ── */}
-      <section className="py-12 md:py-20 bg-gradient-to-r from-[#00CED1] to-cyan-400">
+      <section className="pt-4 pb-12 md:pb-20 bg-gradient-to-r from-[#00CED1] to-cyan-400">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto text-center">
             {[
@@ -161,7 +161,7 @@ export default function Home() {
       </section>
 
       {/* ── Process Section ── */}
-      <section className="py-12 md:py-24 bg-gray-50">
+      <section className="pt-4 pb-12 md:pb-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="mb-8 md:mb-16">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Our Approach</p>
@@ -206,7 +206,7 @@ export default function Home() {
       </section>
 
       {/* ── Testimonials Section ── */}
-      <section className="py-12 md:py-24 bg-gray-50">
+      <section className="pt-4 pb-12 md:pb-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="mb-8 md:mb-16">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Client Feedback</p>
@@ -239,7 +239,7 @@ export default function Home() {
       </section>
 
       {/* ── Blog Section ── */}
-      <section className="py-12 md:py-24 bg-white">
+      <section className="pt-4 pb-12 md:pb-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="mb-8 md:mb-16">
             <p className="text-[#00CED1] font-bold uppercase tracking-widest text-xs md:text-sm mb-2 md:mb-4">Latest Insights</p>
@@ -298,7 +298,7 @@ export default function Home() {
       </section>
 
       {/* ── Final CTA Section ── */}
-      <section className="py-12 md:py-24 bg-gradient-to-r from-[#00CED1] to-cyan-400">
+      <section className="pt-4 pb-12 md:pb-24 bg-gradient-to-r from-[#00CED1] to-cyan-400">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
             Ready to Elevate Your IT?

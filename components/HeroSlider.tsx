@@ -30,7 +30,7 @@ export default function HeroSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       goTo((current + 1) % slides.length)
-    }, 5000)
+    }, 3000)
     return () => clearInterval(timer)
   }, [current])
 
@@ -75,12 +75,12 @@ export default function HeroSlider() {
                 Welcome to Zelitsolutions
               </p>
               <h1
-                className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 transition-all duration-700 delay-100 whitespace-nowrap ${
+                className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 transition-all duration-700 delay-100 whitespace-nowrap text-[#00CED1] ${
                   index === current ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                {slide.title} <span className="text-[#00CED1]">.</span>
+                {slide.title}
               </h1>
               <p
                 className={`text-base md:text-xl font-light max-w-2xl mx-auto mb-8 text-gray-200 transition-all duration-700 delay-200 ${
