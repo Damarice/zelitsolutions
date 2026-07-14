@@ -32,8 +32,8 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight text-gray-900" style={{ fontFamily: "'Inter', sans-serif" }}>
               Transform Your IT <span className="text-[#00CED1]">Infrastructure</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 md:mb-8 max-w-2xl leading-relaxed">
-              Strategic IT solutions that scale with your business. From managed services to cybersecurity, we keep your operations running smoothly.
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 md:mb-8 max-w-3xl leading-relaxed">
+              From managed IT services and web development to domain registration, email solutions, computer hardware, structured cabling, and network design, we deliver comprehensive, scalable IT solutions that keep your business secure, connected, and ahead of the curve. Partner with Zelit Solutions Ltd and let us handle your technology while you focus on what matters most—growing your business.
             </p>
             <div className="flex gap-2 md:gap-4 flex-wrap">
               <Link 
