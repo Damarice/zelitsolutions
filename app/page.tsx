@@ -1,14 +1,16 @@
 'use client'
 
 import Link from 'next/link'
+import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faUsers, faBriefcase, faTrophy,
   faGlobe, faLaptop, faEnvelope, faNetworkWired,
-  faCheckCircle, faArrowRight, faStar, faPlay, faPhone, faServer, faDesktop
+  faCheckCircle, faArrowRight, faStar, faPlay, faPhone, faServer, faDesktop, faChevronDown, faChevronUp
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
+  const [expandedService, setExpandedService] = useState<number | null>(null)
   return (
     <div className="bg-white text-gray-900">
 
@@ -78,38 +80,66 @@ export default function Home() {
             {[
               { 
                 title: 'Website Development', 
-                desc: 'Custom websites that drive results and engage customers.',
+                shortDesc: 'Custom websites that drive results and engage customers.',
+                fullDesc: 'At Zelit Solutions Ltd, we craft stunning, high-performance websites that serve as powerful digital storefronts for your business, combining beautiful design with seamless functionality to captivate visitors and convert them into loyal customers. Our website development process begins with understanding your brand identity, target audience, and business goals, allowing us to create custom solutions—from sleek corporate websites and dynamic e-commerce platforms to engaging portfolios and robust content management systems.',
                 icon: faGlobe
               },
               { 
                 title: 'Managed IT Services', 
-                desc: 'Proactive monitoring, support, and infrastructure management.',
+                shortDesc: 'Proactive monitoring, support, and infrastructure management.',
+                fullDesc: 'At Zelit Solutions Ltd, we replace the unreliable break/fix model with a comprehensive, proactive Managed IT partnership designed to let your technology drive business success rather than hinder it. We provide a dedicated, expert team that acts as your complete IT department, taking full ownership of everything from daily service desk support to complex infrastructure implementation. Through flat-rate, predictable pricing and continuous system monitoring, we eliminate surprise repair costs and preemptively resolve issues before they impact your operations.',
                 icon: faBriefcase
               },
               { 
                 title: 'Sale of Computers & Accessories', 
-                desc: 'Quality hardware and computer accessories for your business.',
+                shortDesc: 'Quality hardware and computer accessories for your business.',
+                fullDesc: 'At Zelit Solutions Ltd, we understand that your business is only as strong as the hardware powering it, which is why we offer a reliable, curated selection of high-performance computers and genuine computer accessories sourced from trusted global brands. Whether you need powerful desktops for your design team, lightweight laptops for your field staff, or rugged workstations for intensive data processing, we provide the right equipment tailored to your specific operational needs and budget.',
                 icon: faDesktop
               },
               { 
                 title: 'Domain Registration & Email Services', 
-                desc: 'Secure domain registration and professional email solutions.',
+                shortDesc: 'Secure domain registration and professional email solutions.',
+                fullDesc: 'At Zelit Solutions Ltd, we make your online presence effortless from the very beginning by handling all your domain registration and professional email services. For startups and growing businesses, we register the perfect domain name that aligns with your identity and vision, ensuring you secure your digital real estate without any hassle or hidden fees. Beyond the domain, we set up reliable, secure, and fully managed email solutions that use your custom domain.',
                 icon: faEnvelope
               },
               { 
                 title: 'Structured Cabling & Networking Solutions', 
-                desc: 'Enterprise-grade network infrastructure and cabling.',
+                shortDesc: 'Enterprise-grade network infrastructure and cabling.',
+                fullDesc: 'At Zelit Solutions Ltd, we transform your network chaos into a powerhouse of speed, reliability, and scalability through expertly designed network solutions built to last. We begin by conducting a thorough assessment of your business needs and physical layout, then deploy future-ready structured cabling infrastructure neatly organized, properly shielded, and meticulously labeled to ensure pristine signal integrity and easy future expansions.',
                 icon: faNetworkWired
               },
             ].map((svc, i) => (
-              <div key={i} className="bg-white border border-gray-200 p-4 md:p-8 rounded-lg hover:border-[#00CED1] hover:shadow-lg transition group service-card">
-                <div className="w-12 md:w-14 h-12 md:h-14 bg-[#00CED1]/10 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#00CED1] transition group-hover:scale-110">
-                  <FontAwesomeIcon icon={svc.icon} className="text-lg md:text-2xl text-[#00CED1] group-hover:text-white transition" />
-                </div>
-                <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  {svc.title}
-                </h3>
-                <p className="text-sm md:text-base text-gray-600">{svc.desc}</p>
+              <div key={i} className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-[#00CED1] hover:shadow-lg transition group service-card">
+                <button
+                  onClick={() => setExpandedService(expandedService === i ? null : i)}
+                  className="w-full p-4 md:p-8 text-left hover:bg-gray-50 transition"
+                >
+                  <div className="w-12 md:w-14 h-12 md:h-14 bg-[#00CED1]/10 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#00CED1] transition group-hover:scale-110">
+                    <FontAwesomeIcon icon={svc.icon} className="text-lg md:text-2xl text-[#00CED1] group-hover:text-white transition" />
+                  </div>
+                  <div className="flex items-start justify-between">
+                    <div className="flex-1">
+                      <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+                        {svc.title}
+                      </h3>
+                      <p className="text-sm md:text-base text-gray-600">{svc.shortDesc}</p>
+                    </div>
+                    <div className="ml-3 flex-shrink-0 text-[#00CED1] mt-1">
+                      <FontAwesomeIcon 
+                        icon={expandedService === i ? faChevronUp : faChevronDown}
+                        className="text-lg"
+                      />
+                    </div>
+                  </div>
+                </button>
+                
+                {expandedService === i && (
+                  <div className="px-4 md:px-8 pb-4 md:pb-8 border-t border-gray-200 bg-gray-50">
+                    <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+                      {svc.fullDesc}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
