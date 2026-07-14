@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faUsers, faBriefcase, faTrophy,
   faGlobe, faLaptop, faEnvelope, faNetworkWired,
-  faCheckCircle, faArrowRight, faStar, faPlay, faPhone, faServer, faDesktop, faChevronDown, faChevronUp
+  faCheckCircle, faArrowRight, faStar, faPlay, faPhone, faServer, faDesktop
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
@@ -110,28 +110,22 @@ export default function Home() {
               },
             ].map((svc, i) => (
               <div key={i} className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-[#00CED1] hover:shadow-lg transition group service-card">
-                <button
-                  onClick={() => setExpandedService(expandedService === i ? null : i)}
-                  className="w-full p-4 md:p-8 text-left hover:bg-gray-50 transition"
-                >
+                <div className="p-4 md:p-8">
                   <div className="w-12 md:w-14 h-12 md:h-14 bg-[#00CED1]/10 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:bg-[#00CED1] transition group-hover:scale-110">
                     <FontAwesomeIcon icon={svc.icon} className="text-lg md:text-2xl text-[#00CED1] group-hover:text-white transition" />
                   </div>
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
-                        {svc.title}
-                      </h3>
-                      <p className="text-sm md:text-base text-gray-600">{svc.shortDesc}</p>
-                    </div>
-                    <div className="ml-3 flex-shrink-0 text-[#00CED1] mt-1">
-                      <FontAwesomeIcon 
-                        icon={expandedService === i ? faChevronUp : faChevronDown}
-                        className="text-lg"
-                      />
-                    </div>
-                  </div>
-                </button>
+                  <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    {svc.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-600 mb-3 md:mb-4">{svc.shortDesc}</p>
+                  
+                  <button
+                    onClick={() => setExpandedService(expandedService === i ? null : i)}
+                    className="text-[#00CED1] font-bold hover:text-cyan-600 transition text-xs sm:text-sm"
+                  >
+                    {expandedService === i ? 'Read Less' : 'Read More'}
+                  </button>
+                </div>
                 
                 {expandedService === i && (
                   <div className="px-4 md:px-8 pb-4 md:pb-8 border-t border-gray-200 bg-gray-50">
