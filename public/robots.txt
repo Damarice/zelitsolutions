@@ -1,0 +1,16 @@
+# Robots.txt for Zelit Solutions
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.next
+Disallow: /api
+
+# Specific crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemaps
+Sitemap: https://zelitsolutions.com/sitemap.xml
